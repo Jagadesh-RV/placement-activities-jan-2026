@@ -1,0 +1,6 @@
+12
+8
+The value of a is greater than the value of b
+Now b is greater than a
+10
+
