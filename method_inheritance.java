@@ -1,11 +1,11 @@
 import java.util.Scanner;
 
-public class methods_and_classes {
+public class method_inheritance {
     public static void main(String[] args) {
-
-        Class_B obj = new Class_B();
+        Class_B obj=new Class_B();
         obj.even_odd_prime();
     }
+    
 }
 
 class Class_A {
@@ -24,29 +24,19 @@ class Class_A {
 class Class_B extends Class_A {
 
     void even_odd_prime() {
-        if (a % 2 == 0) {
-            System.out.println("Even Number");
-        } else {
-            System.out.println("Odd Number");
-        }
-
+        
         int count = 0;
-
-        if (a <= 1) {
-            System.out.println("Not a Prime Number");
-            return;
-        }
-
         for (int i = 1; i <= a; i++) {
             if (a % i == 0) {
                 count++;
             }
         }
 
-        if (count == 2) {
-            System.out.println("Prime Number");
-        } else {
+        if (count >2) {
             System.out.println("Not a Prime Number");
+        }
+        else {
+            System.out.println("Prime Number");
         }
     }
 }
